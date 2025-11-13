@@ -1,29 +1,19 @@
 # 💳 ATM Management System
 
-An interactive **ATM Management System** built using **HTML**, **CSS**, **JavaScript**, and **JSON**.  
-This project simulates basic ATM operations like balance checking, withdrawal, deposit, and transaction history — all managed locally using a simple `db.json` file.
+This is a **Smart ATM Management System** built using **HTML**, **CSS**, **JavaScript**, and **JSON**.
+
+It allows users to simulate ATM operations such as:
+- Insert card / eject card  
+- PIN authentication  
+- Check balance  
+- Withdraw / Deposit money  
+- View transaction history  
+- Generate receipts  
 
 ---
 
-## 🚀 Features
+## 🌐 Live Project Link
 
-- 🏦 User login system  
-- 💰 Check account balance  
-- 💸 Withdraw and deposit money  
-- 📜 View transaction history  
-- 💾 Data stored in `db.json` (local JSON database)  
-- 🎨 Simple and responsive user interface
-
----
-
-## 🛠️ Technologies Used
-
-- **HTML5** — structure and layout  
-- **CSS3** — styling and responsiveness  
-- **JavaScript (ES6)** — logic and interactivity  
-- **JSON** — for storing mock data locally  
-
----
-
-## 📂 Project Structure
+Click below to open and use the project directly 👇  
+👉 [**Open ATM Management System**](https://Manikandan-8078.github.io/atm-management-system/)
 
