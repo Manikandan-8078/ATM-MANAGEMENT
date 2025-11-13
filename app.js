@@ -1,21 +1,25 @@
-/* GPT SmartATM — frontend-only implementation WITH Statement feature
+/* OOAD SmartATM — frontend-only implementation WITH Statement feature
    - last 10 transactions shown as statement with balance after tx
    - printable popup window for printing / saving PDF
    - transactions now store balanceAfter
    - PIN required for confirming each txn (modal)
 */
 
-// ---------- sample DB ----------
+// ---------- DB initialization using db.json ----------
+// This handles the first time the app is loaded. If 'atm_db' is not set,
+// it fetches the data from db.json and initializes 'atm_db' with it.
+// This is now the single source of truth for loading accounts.
 fetch("db.json")
   .then(res => res.json())
   .then(data => {
-    if (!localStorage.getItem("atmAccounts")) {
-      localStorage.setItem("atmAccounts", JSON.stringify(data.accounts));
+    // Only set the primary database key 'atm_db' if it doesn't exist.
+    if (!localStorage.getItem("atm_db")) {
+      localStorage.setItem("atm_db", JSON.stringify(data.accounts));
+      // Re-run initial listing to show accounts after async load is complete
+      listResults('');
     }
   })
   .catch(err => console.error("Error loading DB:", err));
-
-if(!localStorage.getItem('atm_db')) localStorage.setItem('atm_db', JSON.stringify(SAMPLE));
 
 // ---------- helpers ----------
 const DB = {
