@@ -1,0 +1,7 @@
+
+const SAMPLE = [
+  { name:"Manikandan M", card:"1111-2222-3333-4444", pin:"1234", balance:35000, type:"Savings", phone:"9789710268", email:"manikandanmsm123@gmail.com", address:"Chennai, India", blocked:false, transactions:[] },
+  { name:"Sivabarath R", card:"5555-6666-7777-8888", pin:"4321", balance:23000, type:"Current", phone:"9361111408", email:"sivabarath991@gmail.com", address:"Chennai, India", blocked:false, transactions:[] },
+  { name:"Sivaramji P", card:"1000-2000-3000-4000", pin:"1234", balance:35000, type:"Savings", phone:"9629075442", email:"sivaramji@gmail.com", address:"Chennai, India", blocked:false, transactions:[] },
+  { name:"Test User", card:"9999-0000-1111-2222", pin:"1111", balance:5000, type:"Savings", phone:"9000000000", email:"test@demo.com", address:"Bengaluru, India", blocked:false, transactions:[] }
+];
