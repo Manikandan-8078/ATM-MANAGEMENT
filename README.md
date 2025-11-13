@@ -15,5 +15,5 @@ It allows users to simulate ATM operations such as:
 ## 🌐 Live Project Link
 
 Click below to open and use the project directly 👇  
-👉 [**Open ATM Management System**](https://Manikandan-8078.github.io/atm-management-system/)
+👉 [**Open ATM Management System**](https://Manikandan-8078.github.io/ATM-Managemement/)
 
