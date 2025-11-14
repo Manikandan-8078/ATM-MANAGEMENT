@@ -341,7 +341,7 @@ function showReceipt(txn){
     const c = document.createElement('canvas'); c.width=w; c.height=h;
     const ctx = c.getContext('2d');
     ctx.fillStyle = "#02121a"; ctx.fillRect(0,0,w,h);
-    ctx.fillStyle = "#00ffd1"; ctx.font = "20px sans-serif"; ctx.fillText("GPT Smart ATM Receipt", 20, 40);
+    ctx.fillStyle = "#00ffd1"; ctx.font = "20px sans-serif"; ctx.fillText("OOAD Smart ATM Receipt", 20, 40);
     ctx.fillStyle = "#ffffff"; ctx.font="16px sans-serif"; ctx.fillText(`Name: ${current.name}`, 20, 90);
     ctx.fillText(`Card: ${current.card}`,20,120); ctx.fillText(`Txn: ${txn.type}  Amount: ₹${txn.amount}`,20,150);
     ctx.fillText(`Date: ${txn.date}`,20,180);
@@ -413,4 +413,5 @@ closeStatementBtn.onclick = ()=> showView('menu');
 
 // initial rendering
 renderSlot();
+
 listResults('');
